@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .calculator-header {
+            background-color: #2E2E2E;
+            text-align: center; /* 가운데 정렬 */
+            font-size: 24px;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .calculator-body {
+            padding: 20px;
+        }
+
+        .calculator-display {
+            background-color: #F2F2F2;
+            color: black;
+            text-align: right;
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /*  4개의 열, 모든 열의 너비 동일하게 1fr(동적 비율) */
+            grid-gap: 10px;
+        }
+
+        .button {
+            background-color: #F2F2F2;
+            color: black;
+            text-align: center;
+            font-size: 20px; 
+            padding: 10px 0;
+            border: none; /* 테두리 제거 */
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* 배경색 변경 시 0.3초 동안 부드럽게 변화 */
+        }
+
+        /* 2칸 차지 버튼 스타일 */
+        .button-zero {
+            grid-column: span 2;
+        }
+
+        /* 3칸 차지 버튼 스타일 */
+        .button-AC {
+            grid-column: span 3;
+        }
+
+        .button:hover {
+            background-color: #D8D8D8; /* 마우스 호버 시 약간 어두운 회색으로 변경 */
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-header">
+            <div class="calculator-display">123456789</div> <!-- 계산 결과 표시창 -->
+        </div>
+        <div class="calculator-body">
+            <div class="button-container">
+                <button class="button button-AC">AC</button>
+                <button class="button">÷</button>
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button">×</button>
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button">−</button>
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button">+</button>
+                <button class="button button-zero">0</button>
+                <button class="button">.</button>
+                <button class="button">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
