@@ -1,0 +1,58 @@
+.battery {
+    width: 120px;
+    height: 40px;
+    background-color: #F2F2F2;
+    margin-left: 620px;
+}
+
+.battery-level {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.current-time {
+    width: 500px;
+    height: 100px;
+    background-color: #F2F2F2;
+    text-align: center;
+    font-size: 27px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.time-display {
+    position: relative;
+}
+
+
+.container {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.time-container {
+    display: flex;
+    background-color: #F2F2F2;
+    width: 400px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.alarm {
+    width: 200px;
+    height: 100px;
+    background-color: #F2F2F2;
+    text-align: center;
+    font-size: 17px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

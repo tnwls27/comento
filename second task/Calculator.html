@@ -17,8 +17,11 @@
 
         .calculator {
             background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px; /* 테두리 둥글기 설정: 5px (곡선 모서리 반경) */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            /* 그림자 효과 설정:
+            수평으로 0px, 수직으로 2px, 흐릿한 검은색 그림자
+            (rgba(0, 0, 0, 0.1): 검은색 그림자, 투명도 0.1) */
             width: 300px;
         }
 
@@ -26,9 +29,9 @@
             background-color: #2E2E2E;
             text-align: center; /* 가운데 정렬 */
             font-size: 24px;
-            padding: 10px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            padding: 10px; /* 안쪽 여백 설정: 상하좌우 모두 10px */
+            border-top-left-radius: 5px; /* 테두리 모서리 둥글기 설정: 왼쪽 상단 모서리 5px */
+            border-top-right-radius: 5px; /* 테두리 모서리 둥글기 설정: 오른쪽 상단 모서리 5px */
         }
 
         .calculator-body {
@@ -41,15 +44,15 @@
             text-align: right;
             font-size: 20px;
             padding: 10px;
-            border: 1px solid white;
+            border: 1px solid white; /* 테두리 설정: 1px 너비, 흰색 테두리 */
             border-radius: 5px;
             margin-bottom: 10px;
         }
 
         .button-container {
-            display: grid;
+            display: grid; /* 그리드 레이아웃을 사용하여 자식 요소 배치 설정 */
             grid-template-columns: repeat(4, 1fr); /*  4개의 열, 모든 열의 너비 동일하게 1fr(동적 비율) */
-            grid-gap: 10px;
+            grid-gap: 10px; /* 그리드 아이템 사이의 간격 설정: 10px */
         }
 
         .button {
@@ -59,19 +62,19 @@
             font-size: 20px; 
             padding: 10px 0;
             border: none; /* 테두리 제거 */
-            cursor: pointer;
+            cursor: pointer; /* 커서 스타일 설정: 포인터(클릭 가능한 요소를 나타냄) */
             border-radius: 5px;
             transition: background-color 0.3s ease; /* 배경색 변경 시 0.3초 동안 부드럽게 변화 */
         }
 
         /* 2칸 차지 버튼 스타일 */
         .button-zero {
-            grid-column: span 2;
+            grid-column: span 2; /* 그리드 열 차지 설정: 2칸 차지 */
         }
 
         /* 3칸 차지 버튼 스타일 */
         .button-AC {
-            grid-column: span 3;
+            grid-column: span 3; /* 그리드 열 차지 설정: 3칸 차지 */
         }
 
         .button:hover {

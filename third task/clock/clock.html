@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="battery">
+        <div class="battery-level">배터리 : 100%</div>
+    </div>
+    <div class="container">
+        <div class="current-time">
+            <span id="time-display"></span>
+        </div>
+        <div class="alarm"> 
+            <ul id="alarm-list">
+                <!-- 알람 목록이 업데이트될 부분 -->
+            </ul>
+        </div>
+    </div>
+    <div class="time-container">
+        <div>
+            <label for="hour">시 :</label>
+            <input type="number" id="hour" min="0" max="23">
+            <label for="minute">분 :</label>
+            <input type="number" id="minute" min="0" max="59">
+            <label for="second">초 :</label>
+            <input type="number" id="second" min="0" max="59">
+            <button id="add-alarm">알람 추가</button>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
